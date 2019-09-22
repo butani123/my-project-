@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style rel="stylesheet">
+      body {
+   background-color: lightgoldenrodyellow;
+}
+#firput {
+   margin-left: 25%;  
+}
+
+#btn {
+   color: lightskyblue;
+   background-color: mediumblue;
+   text-decoration-color: antiquewhite;
+   -webkit-text-fill-color: antiquewhite;
+   -webkit-text-stroke-color: antiquewhite;
+   margin-left: 15%;
+}
+
+.jumbotron {
+   text-align: center;
+}
+
+h2 {
+   text-align: center;
+}
+
+.container {
+   margin-left: 10%;
+   padding-left: 10%;
+}
+
+#edix {
+   font-size: 1.5em;
+}
+
+#app {
+   margin: 30%;
+   display: none;
+}</style>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>
+         Mockingbird
+      </title>
+   </head>
+   <body>
+      <div id="app">
+         <img src="https://media.giphy.com/media/xTkcEzpX7TV5HQXhF6/giphy.gif" width="40%" height="35%" />
+      </div>
+      <div id="dela">
+      <div class="jumbotron">
+         <div class="container">
+            <h2>
+               Howdy?
+            </h2>
+         </div>   
+      </div>
+      <br/>
+      <div class="container">
+         
+         <div class="col align-self-center">
+            <div class="container">
+               <center>
+                  <label for="first" id="edix">
+                        Can you please spend some of your precious minutes here for survey?
+                  </label>
+               </center>
+                  
+            </div>
+            <br/>
+            <input type="text" name="first" placeholder="Please Enter Your Name Here" id="firput" size="30" autofocus />
+            <button id="btn" class="btn btn-primary">
+               Submit
+            </button>
+            <div id="exp">
+         
+            </div>
+         </div>
+   
+         <br/>
+      </div></div>
+   </body>
+   <script type="text/javascript">
+   let expd = document.getElementById('app');
+   let mybutton = document.getElementById('btn');
+   mybutton.onclick = myfunc;
+   function myfunc() {
+   let inp = document.getElementById('firput').value;
+   if(inp.toLowerCase()=="yash") {
+      alert("Happy Birthday");
+      let dela = document.getElementById('dela');
+      dela.style.display='none';
+
+      expd.style.display='inline';
+   } else {
+      alert("Hi, "+inp);
+   }
+   }
+   </script>
+</html>
